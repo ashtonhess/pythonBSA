@@ -1,7 +1,25 @@
 import time
 
 def doBSA(filename, number):
-    return 0
+    all_timeStart = time.time()
+    dataFile = open(filename, 'r')
+
+    dataContent = dataFile.read()
+    # print(dataContent)
+    dataContentList = dataContent.split(" ")
+    dataFile.close()
+    # print(dataContentList)
+
+    algo_timeStart = time.time()
+    result = algBSA(dataContentList, number, 0, len(dataContentList) - 1)
+    print("algo_time: %s seconds" % (time.time() - algo_timeStart))
+
+    if result != -1:
+        print("Element is at index: " + str(result))
+    else:
+        print("Element was not found.")
+
+    return (time.time() - all_timeStart)
 
 #Helper function to directly implement BSA alg.
 #Split this off from the doBSA so alg. implementation is in a focused func.
