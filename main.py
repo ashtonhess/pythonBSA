@@ -36,3 +36,42 @@ def algBSA(array, number, lowPtr, highPtr):
     else:
         return -1
 
+print("\t\t__________data1.txt__________")
+print("\n")
+print(doBSA("data1.txt", 19))
+print("\n")
+print(doBSA("data1.txt", 225))
+print("\n")
+print(doBSA("data1.txt", 705))
+
+print("\n\n")
+
+print("\t\t__________data2.txt__________")
+print("\n")
+print(doBSA("data2.txt", 128))
+print("\n")
+print(doBSA("data2.txt", 5756))
+print("\n")
+print(doBSA("data2.txt", 9982))
+
+print("\n\n")
+
+print("\t\t__________data3.txt__________")
+print("\n")
+print(doBSA("data3.txt", 1997))
+print("\n")
+print(doBSA("data3.txt", 20680))
+print("\n")
+print(doBSA("data3.txt", 23887))
+
+print("\n\n")
+
+print("\t\t__________data4.txt__________")
+print("\n")
+print(doBSA("data4.txt", 68189))
+print("\n")
+print(doBSA("data4.txt", 921111))
+print("\n")
+print(doBSA("data4.txt", 935099))
+
+print("\n\n")
